@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 3em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: black;
+  color: white;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+#ans {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+input[type="text"] {
+  width: 50vw;
+  display: block;
+  margin: 50px 0 0 50px;
+  height: 4vw;
+  font-size: 2vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sub {
+  width: 15vw;
+  height: 3.5vw;
+  font-size: 2vw;
+  margin-left: 20px;
+  background: dodgerblue;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+}
+#ans {
+  margin-left: 30px;
+  color: white;
+}
+@media only screen and (max-width: 762px) {
+  /* For mobile phones: */
+  input[type="text"] {
+    width: 100vw;
+    margin:30px 0 0 0 ;
+    padding: 0;
+    height: 7vh;
+    font-size: 7vw;
+  }
+  #sub {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+  }
+  #ans {
+    text-align: center;
+    font-size: 10vw;
+  }
+}
+body {
+  background: #333333;
+  color: white;
+}
+#title {
+  padding-top: 10px;
+}

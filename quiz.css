@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+#nav {
+    transition: 700ms linear;
+    opacity: 0;
+    width: 0px;
+    height: 100vh;
+    background: #696969;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#openn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    background: #333;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    #nav p a {
+        font-size: 2.60em;
+        cursor: pointer;
+        transition: 0.5s;
+        font-family: 'Russo one';
+        white-space: no-wrap;
+        color: white;
+        text-decoration: none;
+    }
+
+        #nav p a:hover {
+            color: black;
+        }
+
+*::selection {
+    background: black;
+    color: white;
+}
+
+#nav h1 {
+    font-size: 4em;
+    font-family: 'Russo one';
+    white-space: no-wrap;
+}
+
+#nav p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.line {
+    width: 50%;
+    height: 5px;
+    background: white;
+    margin: 5px;
+    margin-left: 35%;
+}
+
+#nav button {
+    border: none;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    float: right;
+}
+
+*::selection{
+  background: black;
+  color: white;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: 900;
+}
+body {
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+}
+span {
+  font-size: 1.5rem;
+  line-height: 20px;
+}
+
+#submit {
+  margin-left: 50vw;
+  width: 125px;
+  height: 40px;
+  border: none;
+  background: black;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 250ms;
+  font-weight: 700;
+}
+#submit:hover {
+  background: #222;
+}
+input[type="radio"]:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+input[type="radio"] {
+  z-index: 1000000;
+  margin-left: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  #submit {
+    margin-left: 40vw;
+  }
+}
+#title {
+  padding-top: 15px;
+}
+span {
+  line-height: 25px;
+}
+
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+span {
+  white-space: pre-line;
+}

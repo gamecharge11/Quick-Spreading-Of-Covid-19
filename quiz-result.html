@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <style>
+        body {
+            background: #333;
+            color: white;
+            font-family: sans-serif;
+            
+        }
+        a {
+            color: white;
+            transition: 0.5s;
+        }
+        a:hover {
+            color: #999;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30vh;
+        }
+    </style>
+    <div>
+    <h1 id="res-text">You scored <span id="result"></span> out of 5.</h1>
+    <h1><a href="index.html">Click here</a> to go back</h1>
+    </div>
+    <script>
+        //Create UrlSearchParam
+        var urlParam = new URLSearchParams(window.location.search)
+        document.getElementById("result").innerHTML = "<b>" + urlParam.get("res") + "</b>"
+    </script>
+</body>
+</html>

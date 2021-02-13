@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+  background-color: #333333;
+  font-family: sans-serif;
+  color: white;
+}
+#nav {
+  transition: 0.7s linear;
+  opacity: 0;
+  width: 0px;
+  height: 100vh;
+  background: #696969;
+  position: absolute;
+  top:0;
+  z-index: -1;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#openn {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none; 
+  z-index: 99;
+  background: transparent;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav p a{
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+  color: white;
+  text-decoration: none;
+}
+#nav p a:hover {
+  color: black;
+}
+*::selection{
+  background: white;
+  color: black;
+}
+#nav h1{
+  font-size: 4em;
+  font-family: 'Russo one';
+  white-space: no-wrap;
+}
+#nav p {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.line {
+  width: 30%;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  margin-left: 35%;
+}
+#nav button {
+  border: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+.heading {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://www.fda.gov/files/covid19-1600x900.jpg');
+    background-size: 100vw 100vh;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+@media only screen and (max-width: 500px) {
+  .heading {
+    background-size: 100vw 100%;
+    height: 40vh;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+h2 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+p {
+  text-align: center;
+  font-size: 1.5vw;
+  /* margin-bottom: 30px; */
+}
+a {
+  color: white;;
+}
+/* footer {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  background: #e6e6e6;
+  color: black;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer h1 {
+  justify-self: flex-start;
+  margin-left: 30px;
+}
+#footer{
+  margin-left: 40%;
+  font-size: 1em;
+}
+footer a {
+  color: black;
+}
+
+a {
+  font-size: 3em;
+}
+footer a {
+  font-size: 2vw;
+}
+footer h1 {
+  white-space: nowrap;
+}
+p a {
+  font-size: 1em;
+} */
+
+@media only screen and (max-width: 770px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 943px) {
+  p {
+    font-size: 1em;
+  }
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p a {
+  color: black;
+}
+#title {
+  margin-top: 20px;
+}
+/* back to top */
+#top {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  top: 605px;
+  text-decoration: none;
+  font-size: 5em;
+}
